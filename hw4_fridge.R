@@ -3,7 +3,7 @@ library(tidytext)
 library(tidyverse)
 
 # Download the data, break Prescription columns into separate variables
-fridge = read_excel("C:/Users/Сережа/Documents/LUT/Big Data/Exercise4_0310/Fridge.xlsx")
+fridge = read_excel("./data/Fridge.xlsx")
 p1 = fridge %>% select('Person', 'Prescription 1') %>% rename(txt = 'Prescription 1')
 p2 = fridge %>% select('Person', 'Prescription 2') %>% rename(txt = 'Prescription 2')
 p3 = fridge %>% select('Person', 'Prescription 3') %>% rename(txt = 'Prescription 3')

@@ -8,7 +8,7 @@ sc = spark_connect(master = 'local')
 class(sc)
 
 # Load data locally from csv
-reviews = read_csv("C:/Studies/big_data/7282_1.csv")
+reviews = read_csv("./data/7282_1.csv")
 
 # Select only text and ratings from the dataframe, remove NAs
 reviews_text = reviews %>% select(reviews.text, reviews.rating) %>% 

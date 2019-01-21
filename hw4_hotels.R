@@ -2,7 +2,7 @@ library(readxl)
 library(tidytext)
 library(tidyverse)
 
-reviews = read_csv("C:/Studies/big_data/7282_1.csv")
+reviews = read_csv("./data/7282_1.csv")
 
 reviews_ny = reviews %>% filter(city == 'New York') %>% 
   select(reviews.text) %>% rename(txt = reviews.text) %>% filter(txt != 'NA')
